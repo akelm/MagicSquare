@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_weight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5sp"
+
+        android:onClick="submit"
+        android:text="@string/submit"
+        android:textSize="@dimen/buttonText"
+
+        />
+
+    <Button
+        android:id="@+id/cont"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_weight="1"
+        android:layout_gravity="fill_horizontal"
+
+        android:layout_margin="5sp"
+        android:enabled="false"
+        android:onClick="cont"
+        android:textSize="@dimen/buttonText"
+        android:text="@string/contin" />
+
+    <Button
+        android:id="@+id/newgame"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_weight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5sp"
+
+
+        android:enabled="false"
+        android:onClick="newgame"
+        android:textSize="@dimen/buttonText"
+
+        android:text="@string/new_game" />
+
+    <Button
+        android:id="@+id/exitgame"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_weight="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_margin="5sp"
+
+
+        android:onClick="exitgame"
+        android:textSize="@dimen/buttonText"
+        android:text="@string/exit_game" />
+
+</merge>

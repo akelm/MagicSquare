@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/squareGrid"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        app:columnCount="5"
+        app:rowCount="5"
+    >
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="1"
+        app:columnCount="1"
+        app:rowCount="4"
+
+        >
+
+
+        <include
+            app:layout_columnWeight="1"
+            app:layout_gravity="center"
+            layout="@layout/buttons"
+            />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
+
+</LinearLayout>
